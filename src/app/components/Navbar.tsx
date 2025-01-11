@@ -40,7 +40,7 @@ const items: Item[] = [
 
 function Navbar() {
   return (
-    <div className="h-20 px-4 md:px-8 lg:px-16 xl:32 2xl:px-64 relative">
+    <div className="h-20 z-10 px-4 md:px-8 lg:px-16 xl:32 2xl:px-64 relative">
       <div className="md:hidden h-full flex justify-between items-center">
         {/* mobile */}
         <Link href={"/"}>

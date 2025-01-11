@@ -9,3 +9,13 @@
 .scrollbar-hide {
   scrollbar-width: none;
 }
+
+.image-container .transition-all {
+  transition: all 0.7s cubic-bezier(0.25, 0.1, 0.25, 1);
+}
+
+.thumbnail-image:hover,
+.thumbnail-image:click {
+  transition: transform 2s ease-in-out; /* smooth transform transition */
+  transform: scale(0.1); /* scale effect on hover */
+}

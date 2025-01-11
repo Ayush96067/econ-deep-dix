@@ -25,7 +25,11 @@ function Menu({ items }: MenuProps) {
         <div className=" absolute bg-black text-white left-0 top-20 w-full h-[calc(100vh-80px)] flex flex-col justify-center  items-center gap-6 text-lg transition-all duration-700">
           {items.map((item, id) => {
             return (
-              <Link href={item.src} key={id}>
+              <Link
+                href={item.src}
+                onClick={() => setOpen((op) => !op)}
+                key={id}
+              >
                 {item.name}
               </Link>
             );
